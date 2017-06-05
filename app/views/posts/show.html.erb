@@ -1,0 +1,30 @@
+<%= render "menu/menu" %>
+
+<div class="container">
+	<% if flash[:notice] %>
+		<div class="notice"><%= flash[:notice] %></div>
+	<% end %>
+	<div class="col-xs-12 post-stream">
+		<div class="post-title-bar">
+			<h2 class="post-title"><%= @post.title %></h2>
+			<h5 class="post-author">by <b><%= @post.author && @post.author.name %></b></h5>
+			<h6><%= @post.created_at.strftime('%b %d, %Y') %></h6>
+		</div>
+
+		<div class="post-body">
+			<%= raw @post.body %>
+		</div>
+	</div>
+
+	<div class="col-xs-12 comments">
+		<h3>Comments</h3>
+		<%= render @post.comments %>
+
+		<h4>Add a comment:</h4>
+		<%= render 'comments/form' %>
+	</div>
+	<div class="text-center post-actions">
+		<%= link_to 'Back', posts_path, :class => "btn" %>
+	</div>
+</div>
+

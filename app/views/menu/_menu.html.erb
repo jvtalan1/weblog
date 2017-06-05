@@ -1,0 +1,19 @@
+<div class="menu-bar">
+	<ul>
+		<li><%= link_to "Home", posts_path %></li>
+		<li><%= link_to "Archive", archive_post_path(@posts) %></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	<div class="search-bar">
+		<%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+		<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+		<%= submit_tag "Search" %>
+		<% end %>
+		<% if @posts.present? %>
+		<%= render @posts %>
+		<% else %>
+		<p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+		<% end %>
+	</div>
+</div>
