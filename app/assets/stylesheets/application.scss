@@ -18,102 +18,51 @@
 @import "bootstrap";
 
 @font-face {
-	font-family: "Open Sans";
-	src: url("/assets/OpenSans-Regular.ttf");
+  font-family: "Open Sans";
+  src: url("/assets/OpenSans-Regular.ttf");
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("/assets/Roboto-Regular.ttf");
+  font-family: "Roboto";
+  src: url("/assets/Roboto-Regular.ttf");
 }
 
 @font-face {
-	font-family: "Roboto Condensed";
-	src: url("/assets/RobotoCondensed-Bold.ttf");
+  font-family: "Roboto Condensed";
+  src: url("/assets/RobotoCondensed-Bold.ttf");
 }
 
 @font-face {
-	font-family: "Roboto Medium";
-	src: url("/assets/Roboto-Medium.ttf");
+  font-family: "Roboto Medium";
+  src: url("/assets/Roboto-Medium.ttf");
 }
 
 @font-face {
-	font-family: "Roboto Light";
-	src: url("/assets/Roboto-Light.ttf");
+  font-family: "Roboto Light";
+  src: url("/assets/Roboto-Light.ttf");
 }
 
 
 body {
-	/*background: #A28D62 image-url("bg-image2.jpg") no-repeat fixed top;*/
-	background-color: rgb(255, 255, 255);
-	background-size: cover;
+  /*background: #A28D62 image-url("bg-image2.jpg") no-repeat fixed top;*/
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
 }
 
 .search-bar {
-	float: right;
-	margin: 10px 20px 0 0;
+  float: right;
+  margin: 10px 20px 0 0;
 }
 
 .container {
-	font-family: "Open Sans";
-	background-color: rgba(248,248,255, 0.95);
-	width: 60%;
-	margin: auto;
-	padding: 30px 30px 30px 30px;
-}
-
-.post-stream {
-	margin-top: 40px;
-}
-
-
-.post-title {
-	color: #333;
-	font-family: "Roboto Condensed";
-	display: inline;
-}
-
-.post-title a:link {
-	text-decoration: none;
-}
-
-.post-title-bar {
-	border-bottom: 2px solid;
-}
-
-.post-body {
-	margin-top: 20px;
-}
-
-h5.post-author {
-	display: inline;
-}
-
-.comments {
-	font-family: "Roboto Medium";
-}
-
-.post-actions {
-	font-family: "Roboto";
-}
-
-.comments-body {
-	font-family: "Roboto Light";
+  font-family: "Open Sans";
+  background-color: rgba(248,248,255, 0.95);
+  width: 60%;
+  margin: auto;
+  padding: 30px 30px 30px 30px;
 }
 
 a.btn {
-	color: #fff;
-	background-color: #63B3B4;
-}
-
-.all-posts {
-	width: 100%;
-}
-
-.comment-box {
-	width: 300px;
-}
-
-.comment-box-body {
-	height: 150px;
+  color: #fff;
+  background-color: #63B3B4;
 }

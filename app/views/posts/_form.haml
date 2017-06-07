@@ -14,7 +14,7 @@
     = f.collection_select :category_id, Category.all, :id, :category, :class => "dropdown"
   .form-group
     = f.label :author
-    = f.collection_select :admin, Admin.all, :id, :author_name
+    = f.collection_select :author_id, Author.all, :id, :name
   .form-group
     = f.text_area :body, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control content-text-field", placeholder: "Content of your blog post goes here", :cols => 10, :rows => 10
   .form-group
