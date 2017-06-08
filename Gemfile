@@ -60,3 +60,4 @@ gem 'mini_magick'
 gem 'devise'
 gem 'erb2haml' , :group => :development
 gem 'haml-rails'
+gem 'activeadmin'
