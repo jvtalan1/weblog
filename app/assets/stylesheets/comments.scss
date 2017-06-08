@@ -1,3 +1,20 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comments {
+  font-family: "Open Sans";
+}
+
+.comments-actions:hover {
+  background-color: rgb(153, 153, 153);
+}
+
+.comment-box-name {
+  width: 400px;
+}
+
+.comment-box-body {
+  width: 400px;
+  height: 150px;
+}

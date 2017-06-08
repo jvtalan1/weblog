@@ -57,3 +57,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'ckeditor', '~> 4.1'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'
+gem 'erb2haml' , :group => :development
+gem 'haml-rails'
+gem 'activeadmin'

@@ -1,3 +1,37 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post-stream {
+  margin-top: 40px;
+}
+
+.post-title {
+  color: rgb(51, 51, 51);
+  font-family: "Roboto Condensed";
+  display: inline;
+}
+
+.post-title a:link {
+  text-decoration: none;
+}
+
+.post-title-bar {
+  border-bottom: 2px solid;
+}
+
+.post-body {
+  margin-top: 20px;
+}
+
+h5.post-author {
+  display: inline;
+}
+
+.post-actions {
+  font-family: "Roboto";
+}
+
+.all-posts {
+  width: 100%;
+}

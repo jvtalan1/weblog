@@ -1,0 +1,19 @@
+.container
+  - if flash[:notice]
+    .notice= flash[:notice]
+  .col-xs-12.post-stream
+    .post-title-bar
+      %h2.post-title= @post.title.upcase
+      %h5.post-author
+        by
+        %b= @post.author && @post.author.name
+      %h6= @post.created_at.strftime('%b %d, %Y')
+    .post-body
+      = raw @post.body
+  .col-xs-12.comments
+    %h3 Comments
+    = render @post.comments
+    %h4 Add a comment:
+    = render 'comments/form'
+  .text-center.post-actions
+    = link_to 'Back', posts_path, :class => "btn post-actions"
