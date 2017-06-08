@@ -1,7 +1,7 @@
 = form_for([@post, @post.comments.build]) do |f|
   %p
-    = f.text_field :commenter, placeholder: "Name", :class => "comment-box"
+    = f.text_field :commenter, placeholder: "Name", :class => "comment-box-name"
   %p
-    = f.text_area :body, placeholder: "Type your comment here", :class => "comment-box comment-box-body"
+    = f.text_area :body, placeholder: "Type your comment here", :class => "comment-box-body"
   %p
-    = f.submit "Post Comment", :class => "btn"
+    = f.submit "Post Comment", :class => "btn comments-actions"

@@ -3,17 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .comments {
-  font-family: "Roboto Medium";
+  font-family: "Open Sans";
 }
 
-.comments-body {
-  font-family: "Roboto Light";
+.comments-actions:hover {
+  background-color: rgb(153, 153, 153);
 }
 
-.comment-box {
-  width: 300px;
+.comment-box-name {
+  width: 400px;
 }
 
 .comment-box-body {
+  width: 400px;
   height: 150px;
 }

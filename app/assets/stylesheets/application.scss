@@ -10,7 +10,8 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require comments
+ *= require posts
  *= require_self
  */
 
@@ -42,11 +43,14 @@
   src: url("/assets/Roboto-Light.ttf");
 }
 
-
 body {
   /*background: #A28D62 image-url("bg-image2.jpg") no-repeat fixed top;*/
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 238, 173);
   background-size: cover;
+}
+
+.navbar-header {
+  background-color: rgb(255, 111, 105);
 }
 
 .search-bar {
@@ -62,7 +66,12 @@ body {
   padding: 30px 30px 30px 30px;
 }
 
-a.btn {
+.post-actions a.btn {
+  text-decoration: none;
   color: #fff;
-  background-color: #63B3B4;
+  background-color: rgb(2, 120, 120);
+
+  &:hover {
+    background-color: rgb(253, 182, 50)
+  };
 }
