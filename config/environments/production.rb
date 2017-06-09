@@ -88,6 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+<<<<<<< HEAD
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'safe-island-25707.herokuapp.com' }
 
@@ -100,4 +101,12 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
 
+=======
+  Rails.application.routes.default_url_options[:host] = 'safe-island-25707.herokuapp.com'
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+  
+>>>>>>> 0d48d8a44fa5af15ddec89c4b34578affd0ea6e6
 end
