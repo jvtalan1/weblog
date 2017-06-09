@@ -20,27 +20,27 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/OpenSans-Regular.ttf");
+  src: font-url("/assets/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/Roboto-Regular.ttf");
+  src: font-url("/assets/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("/assets/RobotoCondensed-Bold.ttf");
+  src: font-url("/assets/RobotoCondensed-Bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("/assets/Roboto-Medium.ttf");
+  src: font-url("/assets/Roboto-Medium.ttf");
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: url("/assets/Roboto-Light.ttf");
+  src: font-url("/assets/Roboto-Light.ttf");
 }
 
 body {
