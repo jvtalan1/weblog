@@ -26,4 +26,14 @@ ActiveAdmin.register Post do
     actions
   end
 
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :category_id, :label => 'Category', :as => :select, :collection => Category.all
+      f.input :author_id, :label => 'Author', :as => :select, :collection => Author.all
+      f.input :body, :label => 'Body', :as => :ckeditor
+    end
+    f.actions
+  end
+
 end

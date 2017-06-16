@@ -29,10 +29,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def manage
-    @posts = Post.all
-  end
-
   # Edit action retrives the post and renders the edit page
   def edit
       
