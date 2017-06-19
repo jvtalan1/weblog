@@ -1,13 +1,31 @@
-%nav.navbar.navbar-default.navbar-container
+/ Navigation
+%nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
   .container-fluid
     / Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+    .navbar-header.page-scroll
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => root_path} Rails Blog
-    #navbar-collapse.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-list
-        %li= link_to 'Home', root_path
+        Menu
+        %i.fa.fa-bars
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a= link_to "Home", posts_path
+        %li
+          %a= link_to "About", "/about"
+        %li
+          %a= link_to "Categories", "#"
+        %li
+          %a= link_to "Contact", "/contact"
+
+/ Page Header
+/ Set your background image for this header on the line below.
+%header.intro-header
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .site-heading
+          %h1 Solo Backpacking
+          .hr.small
+          .span.subheading A Minimalist Travel Blog by JV

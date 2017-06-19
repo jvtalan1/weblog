@@ -14,4 +14,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require ckeditor/init
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .

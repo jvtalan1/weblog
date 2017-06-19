@@ -67,3 +67,5 @@ gem 'devise'
 gem 'erb2haml' , :group => :development
 gem 'haml-rails'
 gem 'activeadmin'
+gem 'font-awesome-rails'
+gem 'react-rails'

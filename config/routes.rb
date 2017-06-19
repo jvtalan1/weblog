@@ -10,4 +10,7 @@ Rails.application.routes.draw do
     resources :comments
   
   end
+
+  get "/:page" => "pages#show"
+
 end

@@ -8,8 +8,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = render "layouts/navigation"
-    #modal-holder
-    %p.notice= notice
-    %p.alert= alert
+    / #modal-holder
+    / %p.notice= notice
+    / %p.alert= alert
     .container-fluid
       = yield
+  = render "layouts/footer"
