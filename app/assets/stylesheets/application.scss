@@ -20,78 +20,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/*
-@font-face {
-  font-family: "Open Sans";
-  src: asset-url("OpenSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: asset-url("Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: asset-url("RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Roboto Medium";
-  src: asset-url("Roboto-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Roboto Light";
-  src: asset-url("Roboto-Light.ttf");
-}
-
-body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #333333;
-}
-
-.header {
-  top: 0;
-  height: 200px;
-  background-color: white;
-}
-
-.navbar-container {
-  border-radius: 0;
-}
-
-.navbar-header {
-  float: right;
-  margin-right: 200px;
-
-}
-
-.search-bar {
-  float: right;
-  margin: 10px 20px 0 0;
-}
-
-.container {
-  font-family: "Open Sans";
-  background-color: rgba(248,248,255, 0.95);
-  width: 60%;
-  margin: auto;
-  padding: 30px 30px 30px 30px;
-  margin-bottom: 80px;
-}
-
-.post-actions a.btn {
-  text-decoration: none;
-  color: #fff;
-  background-color: rgb(2, 120, 120);
-
-  &:hover {
-    background-color: rgb(253, 182, 50)
-  };
-}
-*/
 /*!
  * Start Bootstrap - Clean Blog v3.3.7+1 (http://startbootstrap.com/template-overviews/clean-blog)
  * Copyright 2013-2017 Start Bootstrap
@@ -100,13 +28,30 @@ body {
 
 @font-face {
   font-family: "Open Sans";
-  src: asset-url("OpenSans-Bold.ttf");
+  src: asset-url("OpenSans-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: asset-url("OpenSans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: asset-url("OpenSans-ExtraBold.ttf");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Helvetica Neue";
   src: asset-url("HelveticaNeue.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: asset-url("Lora-Regular.ttf");
 }
 
 header.intro-header {
@@ -332,39 +277,10 @@ hr.small {
     font-size: 30px;
   }
 }
-.post-preview > a {
+/*.post-preview > a {
   color: #333333;
-}
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #0085A1;
-}
-.post-preview > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.post-preview > .post-subtitle {
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.post-preview > .post-meta {
-  color: #777777;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-}
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #333333;
-}
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  color: #0085A1;
-  text-decoration: underline;
-}
+}*/
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
@@ -399,58 +315,6 @@ footer .copyright {
   margin-bottom: 0;
 }
 
-/*
-.floating-label-form-group {
-  font-size: 14px;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
-}
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  z-index: 1;
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
-  resize: none;
-}
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
-}
-.floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eeeeee;
-}
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-.floating-label-form-group-with-focus label {
-  color: #0085A1;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
-}
-*/
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
