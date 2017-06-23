@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/galetahub/ckeditor.git
-  revision: d0194ccd3f181be603f419c233ca7d4ce657b09a
+  revision: 1cca2775e603cfe7805bfbfed00b1ce78ced5e44
   specs:
     ckeditor (4.2.3)
       cocaine
@@ -182,7 +182,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_magick (4.7.1)
+    mini_magick (4.7.2)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
@@ -311,7 +311,6 @@ DEPENDENCIES
   font-awesome-rails
   haml-rails
   jbuilder (~> 2.5)
-  jquery-rails
   listen (>= 3.0.5, < 3.2)
   mail_form
   mini_magick
