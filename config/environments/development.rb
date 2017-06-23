@@ -65,5 +65,6 @@ Rails.application.configure do
     password:             'jvtalan1123456',
     authentication:       'plain',
     enable_starttls_auto: true  }
-
+  config.react.variant = :development
+  
 end

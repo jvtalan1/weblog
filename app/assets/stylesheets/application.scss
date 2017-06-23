@@ -102,7 +102,7 @@ hr.small {
 }
 .navbar-custom {
   position: absolute;
-  top: 0;
+  top: -35px;
   left: 0;
   width: 100%;
   z-index: 3;
@@ -169,7 +169,7 @@ hr.small {
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -61px;
+    top: -101px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
@@ -196,7 +196,7 @@ hr.small {
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
     -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 60%, 0);
   }
 }
 .intro-header {
@@ -277,10 +277,6 @@ hr.small {
     font-size: 30px;
   }
 }
-/*.post-preview > a {
-  color: #333333;
-}*/
-
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;

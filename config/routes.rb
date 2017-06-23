@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "posts#index"
 
-  resources :posts do # /posts/:id || /posts
+  resources :posts do
 
     resources :comments
   
@@ -15,5 +15,10 @@ Rails.application.routes.draw do
 
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
+
+  namespace :api do
+    resources :events
+    resources :comments, only: [:create]
+  end
 
 end
