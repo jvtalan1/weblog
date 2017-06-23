@@ -4,11 +4,12 @@
       - @posts.each do |post|
         .post-preview
           %h2.post-title
-            = link_to post.title.upcase, post_path(post)
+            = link_to post.title, post_path(post)
           %h3.post-subtitle= sanitize summarize(post.body)
           %p.post-meta Posted by #{post.author.name} on #{post.created_at.strftime('%b %d, %Y')}
           %h6
             Posted under
             %b= post.category && post.category.category
           .text-center.post-actions
-            = link_to "READ MORE", post_path(post), :class => "btn post-actions"
+            = link_to "READ MORE", post_path(post), :class => "btn btn-default"
+        %hr

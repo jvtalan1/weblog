@@ -59,6 +59,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form', '~> 3.2'
+gem 'mail_form'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'carrierwave'
@@ -68,4 +69,4 @@ gem 'erb2haml' , :group => :development
 gem 'haml-rails'
 gem 'activeadmin'
 gem 'font-awesome-rails'
-gem 'react-rails'
+gem 'react-rails', '~> 2.2.0'

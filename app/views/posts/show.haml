@@ -1,19 +1,29 @@
-.container
-  - if flash[:notice]
-    .notice= flash[:notice]
-  .col-xs-12.post-stream
-    .post-title-bar
-      %h2.post-title= @post.title.upcase
-      %h5.post-author
-        by
-        %b= @post.author && @post.author.name
-      %h6= @post.created_at.strftime('%b %d, %Y')
-    .post-body
-      = raw @post.body
-  .col-xs-12.comments
-    %h3 Comments
-    = render @post.comments
-    %h4 Add a comment:
-    = render 'comments/form'
-  .text-center.post-actions
-    = link_to 'Back', posts_path, :class => "btn post-actions"
+/ Page Header
+/ Set your background image for this header on the line below.
+/ %header.intro-header
+/   .container
+/     .row
+/       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+/         .post-heading
+/           %h1= @post.title
+/           %span.meta Posted by #{@post.author.name} on #{@post.created_at.strftime('%b %d, %Y')}
+
+
+/ Post Content
+%article
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        = sanitize @post.body
+        %hr
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .text-center.post-actions
+          = link_to 'Back', posts_path, :class => "btn btn-default"
+        = react_component 'EventApplication'
+        %h3 Comments
+        = render @post.comments
+        %h4 Add a comment:
+        = react_component 'CommentsForm'
+        / = react_component 'EventApplication'
+
