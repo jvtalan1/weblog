@@ -1,15 +1,3 @@
-/ Page Header
-/ Set your background image for this header on the line below.
-/ %header.intro-header
-/   .container
-/     .row
-/       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-/         .post-heading
-/           %h1= @post.title
-/           %span.meta Posted by #{@post.author.name} on #{@post.created_at.strftime('%b %d, %Y')}
-
-
-/ Post Content
 %article
   .container
     .row
@@ -20,10 +8,8 @@
       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
         .text-center.post-actions
           = link_to 'Back', posts_path, :class => "btn btn-default"
-        = react_component 'EventApplication'
         %h3 Comments
         = render @post.comments
         %h4 Add a comment:
-        = react_component 'CommentsForm'
-        / = react_component 'EventApplication'
+        = render partial: 'comments/form'
 
